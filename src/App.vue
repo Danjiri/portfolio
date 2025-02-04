@@ -1,30 +1,32 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <NavBar />
+  <IndexPage />
+  <Main />
+
 </template>
 
+<script setup>
+import { ref } from "vue";
+import IndexPage from "./pages/index.vue";
+import Main from "./pages/main.vue";
+import NavBar from "./components/NavBar.vue";
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; 
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
+.title {
+  color: #EAEAEA;
+  font-size: 6rem;
+  font-family: "Inter","BIZ UDPGothic", sans-serif;
+  font-weight: bold;
+  text-align: center;
+} */
 </style>
