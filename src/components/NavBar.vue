@@ -39,6 +39,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    z-index: 1000;
   }
   
   /* ロゴ */
@@ -71,7 +72,7 @@
   }
   
   .nav-links a:hover {
-    color: red;
+    color: greenyellow;
   }
   
   /* ソーシャルアイコン */
